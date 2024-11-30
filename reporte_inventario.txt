@@ -1,0 +1,5 @@
+ID: 1, Nombre: Arroz, Categoría: Granos, Precio: 1000.0, Cantidad: 22
+ID: 2, Nombre: frijol, Categoría: Granos, Precio: 2000.0, Cantidad: 23
+ID: 3, Nombre: pechuga, Categoría: proteinas, Precio: 200.0, Cantidad: 34
+ID: 12, Nombre: maiz, Categoría: granos, Precio: 1234.0, Cantidad: 1000
+Valor total del inventario: 1308800.0

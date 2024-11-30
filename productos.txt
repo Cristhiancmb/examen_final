@@ -1,0 +1,4 @@
+1,Arroz,Granos,1000.0,22
+2,frijol,Granos,2000.0,23
+3,pechuga,proteinas,200.0,34
+10,carne de res,proteinas,15500.0,100
