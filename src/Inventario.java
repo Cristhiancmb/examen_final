@@ -76,9 +76,7 @@ public class Inventario {
         // Guardar los productos en el archivo
         guardarEnArchivo("productos.txt");
     }
-
-
-
+    
     public boolean eliminarProducto(String id) {
         Iterator<Producto> iterator = productos.iterator();
         while (iterator.hasNext()) {

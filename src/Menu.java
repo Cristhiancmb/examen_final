@@ -102,7 +102,7 @@ public class Menu {
         System.out.println("Producto agregado correctamente.");
     }
 
-    
+
 
     private static void actualizarProducto() {
         // Solicitar el ID del producto que se desea actualizar
