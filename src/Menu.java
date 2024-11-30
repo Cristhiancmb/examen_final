@@ -102,50 +102,7 @@ public class Menu {
         System.out.println("Producto agregado correctamente.");
     }
 
-
-    /* private static void actualizarProducto() {
-        System.out.print("Ingrese ID del producto a actualizar: ");
-        String id = scanner.nextLine();
-        //Producto producto = inventario.buscarPorId(id);
-        Producto producto = inventario.();
-
-        if (producto != null) {
-            // Si el producto se encuentra, proceder a la actualización
-            System.out.println("Producto encontrado: " + producto);
-
-            // Validación para actualizar el precio (numérico)
-            boolean precioValido = false;
-            double nuevoPrecio = 0;
-            while (!precioValido) {
-                try {
-                    System.out.print("Ingrese nuevo precio: ");
-                    nuevoPrecio = Double.parseDouble(scanner.nextLine());
-                    if (nuevoPrecio < 0) {
-                        throw new NumberFormatException("El precio no puede ser negativo.");
-                    }
-                    precioValido = true;  // Salir del bucle si el precio es válido
-                } catch (NumberFormatException e) {
-                    System.out.println("Error: El precio debe ser un valor numérico válido. " + e.getMessage());
-                }
-            }
-
-            // Validación para actualizar la cantidad (numérica)
-            boolean cantidadValida = false;
-            int nuevaCantidad = 0;
-            while (!cantidadValida) {
-                try {
-                    System.out.print("Ingrese nueva cantidad: ");
-                    nuevaCantidad = Integer.parseInt(scanner.nextLine());
-                    if (nuevaCantidad < 0) {
-                        throw new NumberFormatException("La cantidad no puede ser negativa.");
-                    }
-                    cantidadValida = true;  // Salir del bucle si la cantidad es válida
-                } catch (NumberFormatException e) {
-                    System.out.println("Error: La cantidad debe ser un valor numérico entero válido. " + e.getMessage());
-                }
-            }
-        }
-    } */
+    
 
     private static void actualizarProducto() {
         // Solicitar el ID del producto que se desea actualizar

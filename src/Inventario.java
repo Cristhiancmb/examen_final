@@ -49,18 +49,6 @@ public class Inventario {
     }
 
 
-   /* public void actualizarProducto(String id, Producto nuevoProducto) {
-        for (Producto producto : productos) {
-            if (producto.getId().equals(id)) {
-                producto.setNombre(nuevoProducto.getNombre());
-                producto.setCategoria(nuevoProducto.getCategoria());
-                producto.setPrecio(nuevoProducto.getPrecio());
-                producto.setCantidad(nuevoProducto.getCantidad());
-                break;
-            }
-        }
-        guardarEnArchivo("productos.txt");
-    } */
 
     public void actualizarProducto(String id, Producto nuevoProducto) {
         boolean productoActualizado = false; // Variable para verificar si se encontró y actualizó el producto
