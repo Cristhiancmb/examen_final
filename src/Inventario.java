@@ -49,7 +49,7 @@ public class Inventario {
     }
 
 
-    public void actualizarProducto(String id, Producto nuevoProducto) {
+   /* public void actualizarProducto(String id, Producto nuevoProducto) {
         for (Producto producto : productos) {
             if (producto.getId().equals(id)) {
                 producto.setNombre(nuevoProducto.getNombre());
@@ -60,7 +60,35 @@ public class Inventario {
             }
         }
         guardarEnArchivo("productos.txt");
+    } */
+
+    public void actualizarProducto(String id, Producto nuevoProducto) {
+        boolean productoActualizado = false; // Variable para verificar si se encontró y actualizó el producto
+
+        // Recorrer la lista de productos
+        for (Producto producto : productos) {
+            if (producto.getId().equals(id)) {  // Si encontramos el producto con el id
+                // Actualizar los campos del producto
+                producto.setNombre(nuevoProducto.getNombre());
+                producto.setCategoria(nuevoProducto.getCategoria());
+                producto.setPrecio(nuevoProducto.getPrecio());
+                producto.setCantidad(nuevoProducto.getCantidad());
+                productoActualizado = true;
+                break; // Salir del bucle una vez que el producto ha sido actualizado
+            }
+        }
+
+        // Verificar si se encontró y actualizó el producto
+        if (productoActualizado) {
+            System.out.println("Producto actualizado correctamente.");
+        } else {
+            System.out.println("No se encontró un producto con el ID proporcionado.");
+        }
+
+        // Guardar los productos en el archivo
+        guardarEnArchivo("productos.txt");
     }
+
 
 
     public boolean eliminarProducto(String id) {
